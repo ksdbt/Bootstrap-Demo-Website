@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background: linear-gradient(to right, rgba(2, 82, 89, 0.9), rgba(255, 255, 255, 0)), url("./assets_img/banner.png") no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        .hero-text {
+            color: white;
+            margin-top: 5rem;
+        }
+        .hero-text h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+        }
+        .hero-text h1 span {
+            -webkit-text-stroke: 2px white;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-text p {
+            max-width: 350px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .btn-custom {
+            border-radius: 20px;
+            background-color: #00605f;
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        .card img {
+            height: 280px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card-content h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .card-content p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: black;
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 3rem;
+            }
+            .destination-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 576px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .destination-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Birla Planetarium</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-warning" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#">Location</a></li>
+                        <li class="nav-item"><a class="nav-link text-warning" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 hero-text">
+                <h1>TAKE A TRIP TO<br /><span>OUTER SPACE</span></h1>
+                <p>Experience cosmic wonders at Birla Planetarium: science meets imagination. Discover space through captivating exhibits and immersive shows.</p>
+                <a href="#" class="btn btn-custom">VISIT NOW</a>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-4 destination-grid">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets_img/dest1.jpeg" class="card-img-top" alt="360-Degree immersive Experience">
+                            <div class="card-content">
+                                <h4> Immersive 360-Degree Experience</h4>
+                                <p>Immerse in 360-degree wonders at Birla Planetarium: science meets imagination, cosmos comes alive through technology.</p>
+                                <a href="#" class="btn btn-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets_img/dest2.jpeg" class="card-img-top" alt="Planetarium Experience">
+                            <div class="card-content">
+                             <h4>Ultimate Planetarium Experience</h4>
+                                <p> Birla Planetarium features cutting-edge technology, interactive exhibits, and mesmerizing star shows for all ages and diverse interests.</p>
+                                <a href="#" class="btn btn-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets_img/dest3.jpeg" class="card-img-top" alt="From Dreams to Reality">
+                            <div class="card-content">
+                                <h4>From Dreams to Reality</h4>
+                                <p>Special summer offer: College students can join an exclusive industrial visit to Birla Planetarium for an unforgettable experience.</p>
+                                <a href="#" class="btn btn-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
